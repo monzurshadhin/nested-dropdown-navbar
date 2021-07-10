@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  background-color: blueviolet;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  background-color: aqua;
+  display: inline-block;
+  margin-left: 10px;
+  background-color: blueviolet;
+}
+ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 20px 50px;
+
+  color: white;
+  font-size: 20px;
+  transition: background-color 1s ease;
+}
+ul li a:hover {
+  background-color: rgb(202, 146, 255);
+}
+.dropdown1 ul li {
+  /* display: none; */
+  display: block;
+}
+.dropdown1 {
+  position: absolute;
+  display: none;
+  margin-left: -10px;
+}
+.dropdown2 {
+  position: absolute;
+  margin-top: -65px;
+  left: 126px;
+  display: none;
+}
+
+.d1:hover .dropdown1 {
+  display: block;
+  position: absolute;
+}
+
+.d1:hover .dropdown2 {
+  display: none;
+}
+
+.d2:hover .dropdown2 {
+  display: block;
+}
